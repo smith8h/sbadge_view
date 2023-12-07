@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sbadge_view/sbadge_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -85,6 +86,10 @@ class _MyHomePageState extends State<MyHomePage> {
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
+        actions: const [
+          SBadgeView(content: Text('data'), badgeCount: 23),
+          SBadgeView(content: Icon(Icons.abc_outlined), badgeCount: 23),
+        ],
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
