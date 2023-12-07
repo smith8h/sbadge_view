@@ -3,33 +3,42 @@ library sbadge_view;
 import 'package:flutter/material.dart';
 
 class SBadgeView extends StatelessWidget {
-  const SBadgeView({super.key, this.contentIcon, this.contentText, this.contentColor  = Colors.white});
+  const SBadgeView({
+    super.key,
+    required this.content,
+    required this.badgeCount,
+    this.badgeColor = Colors.black,
+    this.badgeColorOpacity = 0.5,
+    this.badgePadding = const EdgeInsets.symmetric(vertical: 2, horizontal: 4),
+    this.badgeBorderRadius = 18,
+  });
 
-  final IconData? contentIcon;
-  final String? contentText;
-  final Color contentColor;
+  final Widget content;
+  final int badgeCount;
+  final EdgeInsets badgePadding;
+  final Color badgeColor;
+  final double badgeColorOpacity;
+  final double badgeBorderRadius;
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        IconButton(
-            onPressed: () {},
-            icon: Icon(icon, color: EColors.white)),
+        content,
         Positioned(
           right: 0,
           child: Container(
             height: 18,
-            padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 4),
+            padding: badgePadding,
             decoration: BoxDecoration(
-              color: EColors.block.withOpacity(0.5),
-              borderRadius: BorderRadius.circular(18),
+              color: badgeColor.withOpacity(badgeColorOpacity),
+              borderRadius: BorderRadius.circular(badgeBorderRadius),
             ),
             child: Center(
               child: Text(
-                '123',
+                '$badgeCount',
                 style: Theme.of(context).textTheme.labelLarge!.apply(
-                      color: EColors.white,
+                      color: Colors.white,
                       fontSizeFactor: 0.75,
                     ),
               ),
