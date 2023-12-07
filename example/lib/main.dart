@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sbadgeview/sbadge_view.dart';
+import 'package:sbadgeview/sbadgeview.dart';
 
 void main() {
   runApp(const MyApp());
