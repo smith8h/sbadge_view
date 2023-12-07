@@ -1,8 +1,15 @@
 name: sbadge_view
-description: "A new Flutter package project."
+description: "Great flutter badge view for shoung counts of notifications from the database and other counts, including notifications that notify users of anything required attention to."
 version: 1.0.0
 
-homepage:
+homepage: https://github.com/smith8h/sbadge_view
+
+topics:
+  - badge
+  - badge_view
+  - actions
+  - all_platforms
+  - counter
 
 environment:
   sdk: ">=3.2.2 <4.0.0"
