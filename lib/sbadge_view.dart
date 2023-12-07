@@ -1,4 +1,4 @@
-library sbadge_view;
+library sbadgeview;
 
 import 'package:flutter/material.dart';
 
