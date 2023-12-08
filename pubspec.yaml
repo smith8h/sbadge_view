@@ -1,6 +1,6 @@
 name: sbadgeview
 description: "Great flutter badge view for shoung counts of notifications from the database and other counts, including notifications that notify users of anything required attention to."
-version: 1.0.0
+version: 1.0.1
 
 homepage: https://github.com/smith8h/sbadge_view
 
