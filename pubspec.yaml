@@ -6,9 +6,9 @@ homepage: https://github.com/smith8h/sbadge_view
 
 topics:
   - badge
-  - badge_view
+  - badgeview
   - actions
-  - all_platforms
+  - allplatforms
   - counter
 
 environment:

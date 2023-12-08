@@ -3,6 +3,7 @@ library sbadgeview;
 import 'package:flutter/material.dart';
 
 class SBadgeView extends StatelessWidget {
+  /// A view widget that showing the count of notifications or any important statusses in a beautiful way as a badge.
   const SBadgeView({
     super.key,
     required this.content,
@@ -13,11 +14,28 @@ class SBadgeView extends StatelessWidget {
     this.badgeBorderRadius = 18,
   });
 
+  /// The [content] of the badge to be displayed on.
+  /// it can be any widget of <b>TextButton</b>, <b>IconButton</b> or else..
   final Widget content;
+
+  /// The [badgeCount] of the badge to be displayed.
+  /// it can be any number of notifications or items or important steps..
   final int badgeCount;
+
+  /// [badgeColor] of the badge to be displayed.
+  /// represents the color of the badge to be displayed.
   final EdgeInsets badgePadding;
+
+  /// [badgeColorOpacity] of the badge to be displayed.
+  /// represents the opacity of the badge color to be displayed.
   final Color badgeColor;
+
+  /// [badgePadding] of the badge to be displayed.
+  /// to manage the padding of the badge to be displayed.
   final double badgeColorOpacity;
+
+  /// [badgeBorderRadius] of the badge to be displayed.
+  /// controls the border radius of the badge to be displayed.
   final double badgeBorderRadius;
 
   @override
