@@ -16,7 +16,7 @@ To use this dependeny, add sbadgeview as a dependency in your pubspec.yaml file.
 
 ```yaml
 dependencies:
-  sbadgeview: ^1.0.0
+  sbadgeview: ^1.0.1
 ```
 
 ## Example
@@ -24,7 +24,7 @@ dependencies:
 Import the library.
 
 ```dart
-import 'package:sbadgeview/sbadge_view.dart';
+import 'package:sbadgeview/sbadgeview.dart';
 ```
 
 Use it anywhere you want to create a **SBadgeView**:
